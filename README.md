@@ -220,8 +220,8 @@ require("resolve").setup({
 
 -- Example: Set custom keymaps using <Plug> mappings
 -- Register groups for which-key (optional)
-vim.keymap.set("n", "<leader>gc", "", { desc = "+Git Conflicts" })
-vim.keymap.set("n", "<leader>gcd", "", { desc = "+Diff" })
+vim.keymap.set("n", "<leader>gc", "<Plug>(resolve-next)", { desc = "+Git Conflicts" })
+vim.keymap.set("n", "<leader>gcd", "<Plugi>(resolve-prev)", { desc = "+Diff" })
 
 vim.keymap.set("n", "]c", "<Plug>(resolve-next)", { desc = "Next conflict" })
 vim.keymap.set("n", "[c", "<Plug>(resolve-prev)", { desc = "Previous conflict" })
